@@ -22,7 +22,105 @@
     font-family: "Montserrat", sans-serif;
     color: var(--white);
 
+    /* altezze */
+    --barH: 5.5rem;
+
     scroll-behavior: smooth;
 }
 
+
+
+
+/*######## 2.LAYOUT *########*/
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/*######## 3.HEADER ########*/
+
+header {
+    background-color: var(--blackAlpha);
+    justify-content: space-between;
+    height: 5.5rem;
+    width: 100%;
+    padding: 0 1.4rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 200px;
+}
+
+
+
+
+/*######## 4.ASIDE ########*/
+
+aside {
+    background-color: var(--black);
+    justify-content: space-between;
+    width: 230px;
+    padding-top: var(--barH);
+    flex-shrink: 0;
+}
+
+.red {
+    background-color: red;
+    height: 80px;
+ }
+
+
+
+/*######## 5.MAIN ########*/
+
+main {
+    background-color: var(--darkBlue);
+    overflow-y: auto;
+    height: calc(100vh - var(--barH));
+    width: 100%;
+    padding-top: var(--barH);
+}
+
+section {
+    padding: 1rem;
+}
+
+
+.green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+ }
+
+
+
+/*######## 6.FOOTER ########*/
+
+footer {
+    background-color: var(--darkGrey);
+    justify-content: space-between;
+    height: 5.5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.violet {
+    background-color: violet;
+    width: 100px;
+ }
 
