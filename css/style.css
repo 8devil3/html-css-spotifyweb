@@ -49,38 +49,21 @@ ul {
 
 
 
+/*######## 3.CONTAINER ########*/
 
-/*######## 3.HEADER ########*/
+/* header */
 
 header {
-    background-color: var(--blackAlpha);
+    background-color: var(--black);
     justify-content: space-between;
-    align-items: center;
-    height: 5.5rem;
-    width: 100%;
-    padding: 0 1.4rem;
-    position: fixed;
-    z-index: 10;
-    top: 0;
+    align-items: flex-start;
+    width: 230px;
+    padding: 1.4rem 0.5rem 0.5rem 0.5rem;
+    flex-shrink: 0;
 }
 
 header img {
     height: 2.5rem;
-}
-
-
-
-
-/*######## 4.CONTAINER ########*/
-
-/* aside */
-
-aside {
-    background-color: var(--black);
-    justify-content: space-between;
-    width: 230px;
-    padding: var(--barH) 1.4rem 0.5rem 1.4rem;
-    flex-shrink: 0;
 }
 
 
@@ -92,23 +75,47 @@ main {
     height: calc(100vh - var(--barH));
     width: 100%;
     padding-top: var(--barH);
+    align-items: flex-start;
 }
 
-section {
+main .banner-top {
+    background-color: var(--blackAlpha);
+    justify-content: flex-end;
+    align-items: center;
+    height: 5.5rem;
+    width: calc(100vw - 230px);
+    padding-right: 1.4rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+main section:not(.banner-top) {
     padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.green {
-    background-color: green;
-    width: 100px;
-    height: 100px;
-    margin: 0.5rem;
- }
+main .col {
+    align-items: center;
+    margin-right: 1rem;
+    max-width: 180px;
+}
+
+main .col:last-child {
+    margin-right: 0;
+} 
+
+main img {
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
 
 
 
 
-/*######## 5.FOOTER ########*/
+/*######## 4.FOOTER ########*/
 
 footer {
     background-color: var(--darkGrey);
