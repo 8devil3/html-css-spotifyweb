@@ -1,0 +1,28 @@
+/*######## 1. CSS RESET ########*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    /* colori */
+    --black: #000;
+    --blackAlpha: #00000080;
+    --lightGrey: #D2D2D2;
+    --midGrey: #7c7c7c;
+    --darkGrey: #282828;
+    --darkBlue: #141922;
+    --green: #B5FF30;
+    --white: #fff;
+    
+    /* font */
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--white);
+
+    scroll-behavior: smooth;
+}
+
+
