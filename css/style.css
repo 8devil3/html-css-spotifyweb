@@ -28,6 +28,10 @@
     scroll-behavior: smooth;
 }
 
+ul {
+    list-style: none;
+}
+
 
 
 
@@ -51,6 +55,7 @@
 header {
     background-color: var(--blackAlpha);
     justify-content: space-between;
+    align-items: center;
     height: 5.5rem;
     width: 100%;
     padding: 0 1.4rem;
@@ -59,32 +64,31 @@ header {
     top: 0;
 }
 
-.yellow {
-    background-color: yellow;
-    width: 200px;
+header img {
+    height: 2.5rem;
 }
 
 
 
 
-/*######## 4.ASIDE ########*/
+/*######## 4.CONTAINER ########*/
+
+/* aside */
 
 aside {
     background-color: var(--black);
     justify-content: space-between;
     width: 230px;
-    padding-top: var(--barH);
+    padding: var(--barH) 1.4rem 0.5rem 1.4rem;
     flex-shrink: 0;
 }
 
-.red {
-    background-color: red;
-    height: 80px;
- }
+aside button {
+    display: block;
+}
 
 
-
-/*######## 5.MAIN ########*/
+/* main */
 
 main {
     background-color: var(--darkBlue);
@@ -108,7 +112,8 @@ section {
 
 
 
-/*######## 6.FOOTER ########*/
+
+/*######## 5.FOOTER ########*/
 
 footer {
     background-color: var(--darkGrey);
