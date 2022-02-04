@@ -83,10 +83,6 @@ aside {
     flex-shrink: 0;
 }
 
-aside button {
-    display: block;
-}
-
 
 /* main */
 
@@ -101,7 +97,6 @@ main {
 section {
     padding: 1rem;
 }
-
 
 .green {
     background-color: green;
@@ -124,8 +119,8 @@ footer {
     bottom: 0;
 }
 
-.violet {
-    background-color: violet;
-    width: 100px;
- }
+footer div {
+    align-items: center;
+}
+
 
