@@ -48,8 +48,107 @@ ul {
 }
 
 
+/*######## 3.ICONE ########*/
 
-/*######## 3.CONTAINER ########*/
+/* icone Font Awesome */
+.icn::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.icn-add-playlist::before {
+    content: "\f0fe";
+    font-size: 2.4rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.icn-favorite::before {
+    content: "\f004";
+}
+
+.icn-shuffle::before {
+    content: "\f074";
+}
+
+.icn-previous::before {
+    content: "\f048";
+}
+
+.icn-next::before {
+    content: "\f051";
+}
+
+.icn-play::before {
+    content: "\f144";
+    font-weight: normal;
+}
+
+.icn-loop::before {
+    content: "\f2f9";
+}
+
+.icn-list::before {
+    content: "\f0ca";
+}
+
+.icn-volume::before {
+    content: "\f028";
+}
+
+.icn-screen::before {
+    content: "\f108";
+}
+
+.icn-folder::before {
+    content: "\f07b";
+}
+
+
+/* icone svg */
+.svg::before {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    filter: brightness(0.5);
+}
+
+.svg-home::before {
+    content: url("../img/home.svg");
+}
+
+.svg-library::before {
+    content: url("../img/libreria.svg");
+}
+
+.svg-search::before {
+    content: url("../img/search.svg");
+}
+
+
+
+
+
+/*######## 34.PULSANTI ########*/
+
+button {
+    background: none;
+    border: 0;
+    color: var(--white);
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+/*######## 5.CONTAINER ########*/
 
 /* header */
 
@@ -66,6 +165,18 @@ header img {
     height: 2.5rem;
 }
 
+header li {
+    margin-bottom: 0.5rem;
+}
+
+header button {
+    color: var(--midGrey);
+}
+
+header button:hover {
+    filter: brightness(2);
+}
+
 
 /* main */
 
@@ -75,7 +186,6 @@ main {
     height: calc(100vh - var(--barH));
     width: 100%;
     padding-top: var(--barH);
-    align-items: flex-start;
 }
 
 main .banner-top {
@@ -93,7 +203,7 @@ main .banner-top {
 main section:not(.banner-top) {
     padding: 1rem;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 main .col {
@@ -115,7 +225,7 @@ main img {
 
 
 
-/*######## 4.FOOTER ########*/
+/*######## 6.FOOTER ########*/
 
 footer {
     background-color: var(--darkGrey);
