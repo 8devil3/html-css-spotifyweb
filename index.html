@@ -161,6 +161,7 @@
     <!-- footer -->
     <footer class="row">
 
+        <!-- traccia in esecuzione -->
         <div class="row now-play">
             <div class="row">
                 <img src="img/sinister.jpeg" alt="Sinister" class="now-play-thumb">
@@ -174,28 +175,42 @@
                 <button class="icn icn-folder"></button>
             </div>
         </div>
+        <!-- / -->
 
-        <div class="col">
-            <div class="row">
+        <!-- player -->
+        <div class="col player">
+
+            <!-- comandi player -->
+            <div class="row player-cmd">
                 <button class="icn icn-shuffle"></button>
                 <button class="icn icn-previous"></button>
                 <button class="icn icn-play"></button>
                 <button class="icn icn-next"></button>
                 <button class="icn icn-loop"></button>
             </div>
-            <div class="row">
-                <span>0:25</span>
-                <div class="time-bar"></div>
-                <span>4:35</span>
-            </div>
-        </div>
+            <!-- / -->
 
+            <!-- time bar -->
+            <div class="row time">
+                <span class="time-count">0:25</span>
+                <div class="time-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="time-count">4:35</span>
+            </div>
+            <!-- / -->
+            
+        </div>
+        <!-- / -->
+
+        <!-- volume -->
         <div class="row">
             <button class="icn icn-list"></button>
             <button class="icn icn-screen"></button>
             <button class="icn icn-volume"></button>
             <div class="volume-bar"></div>
         </div>
+        <!-- / -->
 
     </footer>
     <!-- / -->

@@ -336,6 +336,8 @@ footer div {
     align-items: center;
 }
 
+
+/* traccia in esecuzione */
 footer .now-play-thumb {
     height: 2.5rem;
     margin-right: 0.5rem;
@@ -343,6 +345,7 @@ footer .now-play-thumb {
 
 footer .now-play-data {
     margin-right: 2rem;
+    flex-shrink: 0;
 }
 
 footer .now-play-album {
@@ -365,3 +368,58 @@ footer .now-play button:not(:last-child) {
 footer .now-play-action {
     flex-wrap: wrap;
 }
+
+
+/* player */
+
+/* comandi player */
+footer .player {
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+
+footer .player-cmd {
+    width: 30%;
+    justify-content: space-between;
+}
+
+footer .player-cmd button::before:not(.icn-play) {
+    font-size: 1rem;
+}
+
+footer .icn-play::before {
+    font-size: 2rem;
+}
+
+
+/* time bar */
+footer .time {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+footer .time-bar {
+    height: 4px;
+    width: 100%;
+    margin: 0 1rem;
+    background-color: var(--midGrey);
+    border-radius: 4px;
+}
+
+footer .progress {
+    background-color: var(--lightGrey);
+    width: 30%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+footer .time-count {
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+/* volume */
+
+
