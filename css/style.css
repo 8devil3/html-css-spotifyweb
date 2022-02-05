@@ -399,7 +399,7 @@ footer .time {
     margin-bottom: 1rem;
 }
 
-footer .time-bar {
+footer .time-bar, footer .volume-bar {
     height: 4px;
     width: 100%;
     margin: 0 1rem;
@@ -422,4 +422,10 @@ footer .time-count {
 
 /* volume */
 
+footer .volume {
+    width: 14rem;
+}
 
+footer .volume button:not(:last-of-type) {
+    margin-right: 1rem;
+}
