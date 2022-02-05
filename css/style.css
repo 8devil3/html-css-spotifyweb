@@ -317,9 +317,6 @@ main .banner-top {
     top: 0;
 }
 
-
-
-/* album */
 main .banner-top button {
     text-transform: uppercase;
     font-weight: 600;
@@ -328,6 +325,12 @@ main .banner-top button {
     border-radius: 200rem;
 }
 
+main .banner-top button:hover {
+    transform: scale(1.1);
+}
+
+
+/* album */
 main > section > div {
     flex-wrap: wrap;
 }
@@ -467,6 +470,14 @@ footer .now-play button:not(:last-child) {
     margin-right: 1rem;
 }
 
+footer .now-play button::before {
+    color: var(--midGrey);
+}
+
+footer .now-play button:hover::before {
+    color:var(--white)
+}
+
 footer .now-play-action {
     flex-wrap: wrap;
 }
@@ -494,6 +505,10 @@ footer .icn-play::before {
     font-size: 2rem;
 }
 
+footer button.icn-play:hover {
+    transform: scale(1.1);
+}
+
 
 /* time bar */
 footer .time {
@@ -509,11 +524,27 @@ footer .time-bar, footer .volume-bar {
     border-radius: 4px;
 }
 
+footer .time-bar:hover .progress, footer .volume-bar:hover .progress {
+    background-color: var(--green);
+}
+
 footer .progress {
     background-color: var(--lightGrey);
     width: 30%;
     height: 100%;
     border-radius: 4px;
+    position: relative;
+}
+
+footer .progress:hover .bar-cursor {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--lightGrey);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
 }
 
 footer .time-count {
