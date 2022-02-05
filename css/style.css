@@ -414,13 +414,7 @@ main article.artist img {
     }
 }
 
-@media screen and (max-width: 700px) {
-    main .double {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), (max-width: 800px) {
     main .double {
         width: 100%;
     }
@@ -484,7 +478,7 @@ footer .now-play-action {
 footer .player {
     width: 50%;
     justify-content: space-around;
-    margin-top: 0.5rem;
+    margin: 0.5rem 2rem 0 2rem;
 }
 
 footer .player-cmd {
@@ -529,7 +523,6 @@ footer .time-count {
 }
 
 /* volume */
-
 footer .volume {
     width: 14rem;
 }
