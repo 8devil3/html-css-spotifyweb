@@ -229,6 +229,13 @@ header button:hover {
     filter: brightness(2);
 }
 
+@media screen and (max-width: 600px) {
+    header button {
+        font-size: 0;
+    }
+}
+
+
 
 /* banner top */
 main {
@@ -252,7 +259,8 @@ main .banner-top {
 }
 
 
-/* sezione card */
+
+/* card */
 main .banner-top button {
     text-transform: uppercase;
     font-weight: 600;
@@ -321,10 +329,39 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+    padding: 0 1rem;
 }
 
 footer div {
     align-items: center;
 }
 
+footer .now-play-thumb {
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
 
+footer .now-play-data {
+    margin-right: 2rem;
+}
+
+footer .now-play-album {
+    font-weight: 700;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+footer .now-play-track {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--midGrey);
+    text-transform: capitalize;
+}
+
+footer .now-play button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+footer .now-play-action {
+    flex-wrap: wrap;
+}
