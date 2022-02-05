@@ -172,7 +172,8 @@ button {
 /* header */
 header {
     background-color: var(--black);
-    justify-content: space-between;
+    justify-content: flex-start;
+    height: calc(100vh - var(--barH));
     width: 230px;
     flex-shrink: 0;
 }
@@ -198,8 +199,13 @@ header span.playlist-head {
     display: block;
 }
 
+header .playlist-list {
+    overflow-y: auto;
+}
+
 header .user {
     padding: 1.5rem;
+    flex-grow: 1;
 }
 
 header .user-data {
@@ -465,7 +471,6 @@ footer {
     justify-content: space-between;
     height: 5.5rem;
     width: 100%;
-    position: fixed;
     bottom: 0;
     padding: 0 1rem;
 }
