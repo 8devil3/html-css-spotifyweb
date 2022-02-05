@@ -260,7 +260,7 @@ main .banner-top {
 
 
 
-/* card */
+/* album */
 main .banner-top button {
     text-transform: uppercase;
     font-weight: 600;
@@ -274,15 +274,52 @@ main > div {
 }
 
 main section:not(.banner-top) {
+    padding: 0 0.5rem 2rem 0.5rem;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 0.5rem;
 }
 
 main .double {
     width: calc(100% / 3);
 }
 
+main .playlist-title {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+main .playlist-subtitle {
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--midGrey);
+}
+
+
+/* menu playlist */
+main .playlist-menu {
+    justify-content: center;
+}
+
+main .playlist-menu button{
+    text-transform: uppercase;
+    color: var(--midGrey);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem;    
+}
+
+main .playlist-menu button:first-of-type::after {
+    content: "";
+    border-bottom: 1px var(--green) solid;
+    display: block;
+    width: 3rem;
+    margin: 0.25rem auto 0 auto;
+}
+
+
+
+/* card */
 main article {
     align-items: flex-start;
     margin: 0.5rem;
@@ -299,6 +336,13 @@ main article img {
     width: 100%;
     object-fit: contain;
     margin-bottom: 1rem;
+}
+
+main .album-subtitle {
+    color: var(--midGrey);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
 }
 
 @media screen and (max-width: 1100px) {
