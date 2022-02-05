@@ -120,15 +120,10 @@ ul {
 }
 
 .icn-install::before {
-    content: "\f063";
-    padding: 2px;
-    font-size: 8px;
+    content: "\f358";
+    font-weight: normal;
     color: var(--midGrey);
-    border-radius: 50%;
-    border: 1px var(--midGrey) solid;
-    line-height: 8px;
-    vertical-align: middle;
-    margin-right: 0.5rem;
+    vertical-align: text-bottom;
 }
 
 
@@ -138,7 +133,6 @@ ul {
     width: 1.5rem;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 0.4rem;
     filter: brightness(0.5);
 }
 
@@ -204,7 +198,7 @@ header span.playlist-head {
 }
 
 header .user {
-    padding: 1.4rem;
+    padding: 1.5rem;
 }
 
 header .user-data {
@@ -219,13 +213,13 @@ header hr {
 }
 
 header .user-avatar {
-    padding: 0.15rem;
-    width: 1.5rem;
-    background-color: var(--midGrey);
-    object-fit: contain;
     height: 1.5rem;
+    width: 1.5rem;
+    background-image: url("../img/profile.svg");
+    background-size: contain;
+    background-position: center;
+    background-color: var(--midGrey);
     border-radius: 50%;
-    margin-right: 0.5rem;
 }
 
 header .user-name {
@@ -259,7 +253,15 @@ header button.icn-add-playlist {
     margin: 0.5rem 1.4rem;
 }
 
+header .btn-txt {
+    margin-left: 0.4rem;
+}
+
 @media screen and (max-width: 600px) {
+
+    header {
+        width: 4.5rem;
+    }
 
     header .logo-big{
         display: none;
@@ -271,8 +273,24 @@ header button.icn-add-playlist {
         margin: 1.5rem;
     }
 
+    header .btn-txt {
+        display: none;
+    }
+
     header .playlist {
         display: none;
+    }
+    
+    header hr {
+        display: none;
+    }
+
+    header .user {
+        text-align: center;
+    }
+
+    header .user-data {
+        margin-top: 1rem;
     }
 }
 
