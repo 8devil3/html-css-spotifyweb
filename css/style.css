@@ -1,4 +1,5 @@
 /*######## 1. CSS RESET ########*/
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +49,8 @@ ul {
 }
 
 
+
+
 /*######## 3.ICONE ########*/
 
 /* icone Font Awesome */
@@ -59,15 +62,22 @@ ul {
     font-size: 1rem;
 }
 
-.icn-add-playlist::before {
-    content: "\f0fe";
-    font-size: 2.4rem;
-    vertical-align: middle;
+.icn-add-playlist::before{
+    content: "+";
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     margin-right: 0.5rem;
+    background-color: var(--midGrey);
+    color: var(--black);
+    line-height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    font-size: 2rem;
 }
 
 .icn-favorite::before {
     content: "\f004";
+    font-weight: normal;
 }
 
 .icn-shuffle::before {
@@ -105,6 +115,19 @@ ul {
 
 .icn-folder::before {
     content: "\f07b";
+    font-weight: normal;
+}
+
+.icn-install::before {
+    content: "\f063";
+    padding: 2px;
+    font-size: 8px;
+    color: var(--midGrey);
+    border-radius: 50%;
+    border: 1px var(--midGrey) solid;
+    line-height: 8px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 
@@ -134,7 +157,7 @@ ul {
 
 
 
-/*######## 34.PULSANTI ########*/
+/*######## 4.PULSANTI ########*/
 
 button {
     background: none;
@@ -151,18 +174,47 @@ button {
 /*######## 5.CONTAINER ########*/
 
 /* header */
-
 header {
     background-color: var(--black);
     justify-content: space-between;
     align-items: flex-start;
     width: 230px;
-    padding: 1.4rem 0.5rem 0.5rem 0.5rem;
+    padding: 1.4rem;
     flex-shrink: 0;
 }
 
-header img {
-    height: 2.5rem;
+header .logo {
+    height: 2rem;
+}
+
+header > div {
+    width: 100%;
+}
+
+header .user-data {
+    align-items: center;
+}
+
+header hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--midGrey);
+    margin: 0.5rem 0;
+}
+
+header .user-avatar {
+    padding: 0.15rem;
+    width: 1.5rem;
+    background-color: var(--midGrey);
+    object-fit: contain;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+header .user-name {
+    font-size: 0.75rem;
+    text-transform: capitalize;
 }
 
 header li {
@@ -178,8 +230,7 @@ header button:hover {
 }
 
 
-/* main */
-
+/* banner top */
 main {
     background-color: var(--darkBlue);
     overflow-y: auto;
@@ -200,28 +251,64 @@ main .banner-top {
     top: 0;
 }
 
-main section:not(.banner-top) {
-    padding: 1rem;
-    align-items: flex-start;
+
+/* sezione card */
+main .banner-top button {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 3rem;
+    border: 1px solid var(--white);
+    border-radius: 200rem;
+}
+
+main > div {
     justify-content: flex-start;
 }
 
-main .col {
-    align-items: center;
-    margin-right: 1rem;
-    max-width: 180px;
+main section:not(.banner-top) {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0.5rem;
 }
 
-main .col:last-child {
-    margin-right: 0;
-} 
+main .double {
+    width: calc(100% / 3);
+}
 
-main img {
-    max-height: 180px;
-    object-fit: cover;
+main article {
+    align-items: flex-start;
+    margin: 0.5rem;
+    flex-grow: 1;
+}
+
+main article > div {
+    align-items: center;
+}
+
+main article img {
+    max-width: 220px;
+    width: 100%;
+    object-fit: contain;
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1100px) {
+    main .double {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .double {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .double {
+        width: 100%;
+    }
+}
 
 
 

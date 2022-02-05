@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <title>Spotify</title>
@@ -27,7 +27,7 @@
         <!-- header -->
         <header class="col">
             <div>
-                <img src="img/logo.svg" alt="Spotify logo">
+                <img src="img/logo.svg" alt="Spotify logo" class="logo">
                 <ul>
                     <li><button class="svg svg-home">Home</button></li>
                     <li><button class="svg svg-search">Cerca</button></li>
@@ -47,9 +47,12 @@
             </div>
 
             <div>
-                <button>Installa app</button>
+                <button class="icn icn-install">Installa app</button>
                 <hr>
-                <span class="user">John Doe</span>
+                <div class="row user-data">
+                    <img src="img/profile.svg" alt="John Doe" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                </div>
             </div>
         </header>
         <!-- / -->
@@ -65,55 +68,80 @@
             </section>
             <!-- / -->
 
-            <!-- sezione thumb -->
-            <div>
+            <!-- sezione card -->
+            <div class="col">
                 <section class="row">
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
+
+                    <div class="row double">
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
+                    <div class="row double">
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
-                    </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
-                    </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
-                    </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
+                    <div class="row double">
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
                     </div>
                 </section>
 
                 <section class="row">
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
+                    <div class="row double">
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="col">
+                                <img src="img/metal_lifting.jpg" alt="Metal">
+                                <h4>Metal</h4>
+                                <p>subtitle</p>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col">
-                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                        <h4>Heavy Metal</h4>
-                        <p>Subtitle</p>
-                    </div>
-            </div>
+                </section>
 
-            </section>
+            </div>
             <!-- / -->
 
         </main>
@@ -129,7 +157,7 @@
 
         <div class="row">
             <div class="row"></div>
-            <div class="col">
+            <div class="row">
                 <button class="icn icn-favorite"></button>
                 <button class="icn icn-folder"></button>
             </div>
