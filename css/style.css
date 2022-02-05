@@ -73,6 +73,7 @@ ul {
     width: 2rem;
     display: inline-block;
     font-size: 2rem;
+    vertical-align: middle;
 }
 
 .icn-favorite::before {
@@ -177,18 +178,33 @@ button {
 header {
     background-color: var(--black);
     justify-content: space-between;
-    align-items: flex-start;
     width: 230px;
-    padding: 1.4rem;
     flex-shrink: 0;
 }
 
-header .logo {
+header .logo-big {
     height: 2rem;
+    margin: 1.4rem;
+}
+
+header .logo-small{
+    display: none;
 }
 
 header > div {
     width: 100%;
+}
+
+header span.playlist-head {
+    padding: 1.4rem 1.4rem 0 1.4rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+header .user {
+    padding: 1.4rem;
 }
 
 header .user-data {
@@ -218,20 +234,45 @@ header .user-name {
 }
 
 header li {
-    margin-bottom: 0.5rem;
+    padding: 0.5rem 1.4rem 0.5rem 1.2rem;
+    border-left: 0.25rem var(--black) solid;
+}
+
+header li.active {
+    border-left: 0.25rem var(--green) solid;
 }
 
 header button {
     color: var(--midGrey);
 }
 
+header button.active, header button.active::before {
+    color: var(--white);
+    filter: brightness(0.9);
+}
+
 header button:hover {
     filter: brightness(2);
 }
 
+header button.icn-add-playlist {
+    margin: 0.5rem 1.4rem;
+}
+
 @media screen and (max-width: 600px) {
-    header button {
-        font-size: 0;
+
+    header .logo-big{
+        display: none;
+    }
+
+    header .logo-small {
+        display: block;
+        height: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    header .playlist {
+        display: none;
     }
 }
 
@@ -269,8 +310,8 @@ main .banner-top button {
     border-radius: 200rem;
 }
 
-main > div {
-    justify-content: flex-start;
+main > section > div {
+    flex-wrap: wrap;
 }
 
 main section:not(.banner-top) {
@@ -429,7 +470,7 @@ footer .player {
 }
 
 footer .player-cmd {
-    width: 30%;
+    width: 12rem;
     justify-content: space-between;
 }
 

@@ -27,26 +27,28 @@
         <!-- header -->
         <header class="col">
             <div>
-                <img src="img/logo.svg" alt="Spotify logo" class="logo">
+                <img src="img/logo.svg" alt="Spotify logo" class="logo-big">
+                <img src="img/logo-small.svg" alt="Spotify logo" class="logo-small">
                 <ul>
-                    <li><button class="svg svg-home">Home</button></li>
+                    <li class="active"><button class="svg svg-home active">Home</button></li>
                     <li><button class="svg svg-search">Cerca</button></li>
                     <li><button class="svg svg-library">La tua libreria</button></li>
                 </ul>
-
-                <span>playlist</span>
-                <ul>
-                    <li><button class="icn icn-add-playlist">Crea Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                    <li><button>Nome Playlist</button></li>
-                </ul>
+                <div class="playlist">
+                    <span class="playlist-head">playlist</span>
+                    <button class="icn icn-add-playlist">Crea Playlist</button>
+                    <ul class="playlist-list">
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                    </ul>
+                </div>
             </div>
 
-            <div>
+            <div class="user">
                 <button class="icn icn-install">Installa app</button>
                 <hr>
                 <div class="row user-data">
@@ -76,7 +78,7 @@
                 <button>generi e mood</button>
                 <button>nuove uscite</button>
                 <button>scopri</button>
-            </section>            
+            </section>
             <!-- / -->
 
             <!-- card -->
@@ -94,7 +96,8 @@
                         <article class="col">
                             <div class="col">
                                 <img src="img/stranger.jpeg" alt="Stranger Things, Vol. 1">
-                                <h4 class="album-title">Stranger Things, Vol. 1 (a Neftlix Original Series Soundtrack)</h4>
+                                <h4 class="album-title">Stranger Things, Vol. 1 (a Neftlix Original Series Soundtrack)
+                                </h4>
                                 <p class="album-subtitle">Kyle Dixon & Michael Stein</p>
                             </div>
                         </article>
