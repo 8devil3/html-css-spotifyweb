@@ -554,8 +554,7 @@ footer .now-play-thumb {
 }
 
 footer .now-play-data {
-    margin-right: 2rem;
-    flex-shrink: 0;
+    margin-right: 1rem;
 }
 
 footer .now-play-album {
@@ -572,12 +571,15 @@ footer .now-play-track {
 }
 
 footer .now-play-action {
-    max-width: 2.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-footer .now-play button::before {
+footer .now-play-action button {
+    margin: 0.25rem;
+}
+
+footer .now-play-action button::before {
     color: var(--midGrey);
 }
 
@@ -667,6 +669,7 @@ footer .time-count {
 /* volume */
 footer .volume-bar {
     width: 6rem;
+    margin-right: 0;
 }
 
 footer .volume button:not(:last-of-type) {
