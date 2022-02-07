@@ -202,11 +202,11 @@ header span.playlist-head {
 header .playlist-list {
     overflow-y: auto;
     min-height: 100px;
+    flex-grow: 1;
 }
 
 header .user {
     padding: 1.5rem;
-    flex-grow: 1;
 }
 
 header .user-data {
@@ -470,7 +470,7 @@ main article.artist img {
 footer {
     background-color: var(--darkGrey);
     justify-content: space-between;
-    height: 5.5rem;
+    height: var(--barH);
     width: 100%;
     position: fixed;
     bottom: 0;
