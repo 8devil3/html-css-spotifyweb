@@ -242,6 +242,8 @@ header li.active::before {
 
 header button {
     color: var(--midGrey);
+    filter: brightness(1);
+    transition: 0.2s;
 }
 
 header button.active, 
@@ -391,6 +393,7 @@ main .banner-top button {
     padding: 0.8rem 3rem;
     border: 1px solid var(--white);
     border-radius: 200rem;
+    transition: transform 0.2s;
 }
 
 main .banner-top button:hover {
@@ -416,6 +419,7 @@ main .music-menu button{
     font-size: 1rem;
     font-weight: 600;
     margin: 1rem;    
+    transition: color 0.2s;
 }
 
 main .music-menu button:hover{
@@ -469,15 +473,6 @@ main article {
 }
 
 main article .icn-play::before {
-    font-size: 0;
-    display: none;
-}
-
-main article:hover {
-    cursor: pointer;
-}
-
-main article:hover .icn-play::before {
     display: block;
     font-size: 4rem;
     position: absolute;
@@ -485,10 +480,16 @@ main article:hover .icn-play::before {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-main article:hover img{
-    filter: brightness(0.5);
+main article:hover {
+    cursor: pointer;
+}
+
+main article:hover .icn-play::before {
+    opacity: 1;
 }
 
 main article > div {
@@ -504,6 +505,12 @@ main .img-box {
 main article img {
     width: 100%;
     object-fit: contain;
+    filter: brightness(1);
+    transition: filter 0.3s;
+}
+
+main article:hover img {
+    filter: brightness(0.5);
 }
 
 main .album-subtitle {
