@@ -264,7 +264,7 @@ header .btn-txt {
     margin-left: 0.4rem;
 }
 
-header span.playlist-head {
+header .playlist-head {
     padding: var(--header-items-padding-H) var(--header-items-padding-H) 0 var(--header-items-padding-H);
     text-transform: uppercase;
     font-size: 0.8rem;
