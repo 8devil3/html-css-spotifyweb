@@ -1,3 +1,33 @@
+/*
+INDICE CSS
+
+1. CSS RESET
+
+2. LAYOUT
+
+3. ICONE
+    - icone Font Awesome
+    - icone SVG
+
+4. PULSANTI
+
+5. CONTAINER
+    - header
+    - banner top
+    - main
+    - menu musica
+    - raccolte album
+    - album card
+    
+6. FOOTER   
+    - tracci in esecuzione
+    - player
+    - volume
+
+*/
+
+
+
 /*######## 1. CSS RESET ########*/
 
 * {
@@ -304,7 +334,7 @@ header .btn-txt {
 
 
 
-/* banner top */
+/* main */
 main {
     background-color: var(--darkBlue);
     overflow-y: auto;
@@ -313,6 +343,9 @@ main {
     padding-top: var(--barH);
 }
 
+
+
+/* banner top */
 main .banner-top {
     background-color: var(--blackAlpha);
     justify-content: flex-end;
@@ -523,7 +556,7 @@ footer .now-play-action {
 }
 
 
-/* player */
+/* PLAYER */
 
 /* comandi player */
 footer .player {
