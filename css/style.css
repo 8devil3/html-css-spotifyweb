@@ -409,7 +409,10 @@ main .banner-top button:hover {
 
 /* menu musica */
 main .music-menu {
+    padding: 0.5rem 1rem;
     justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 main .music-menu button{
@@ -493,6 +496,7 @@ main article:hover .icn-play::before {
 
 main article > div {
     align-items: center;
+    max-width: 16rem;
 }
 
 main .img-box {
