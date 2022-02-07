@@ -21,7 +21,8 @@ INDICE CSS
 
 6. FOOTER   
     - traccia in esecuzione
-    - player
+    - comandi player
+    - time bar
     - volume
 
 */
@@ -59,6 +60,9 @@ INDICE CSS
     /* larghezze */
     --headerW: 230px;
     --headerW-mobile: 4rem;
+
+    /*padding */
+    --header-items-padding-H: 1.4rem;
 }
 
 ul {
@@ -96,7 +100,7 @@ ul {
 
 .icn-add-playlist::before{
     content: "+";
-    font-family: "Montserrat", sans-serif;
+    font-family: inherit;
     font-weight: 600;
     margin-right: 0.5rem;
     background-color: var(--midGrey);
@@ -191,7 +195,7 @@ button {
     border: 0;
     color: var(--white);
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     cursor: pointer;
 }
@@ -213,63 +217,15 @@ header {
 
 header .logo-big {
     height: 2rem;
-    margin: 1.4rem;
+    margin: var(--header-items-padding-H);
 }
 
 header .logo-small{
     display: none;
 }
 
-header > div {
-    width: 100%;
-}
-
-header span.playlist-head {
-    padding: 1.4rem 1.4rem 0 1.4rem;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: block;
-}
-
-header .playlist-list {
-    overflow-y: auto;
-    min-height: 100px;
-    flex-grow: 1;
-}
-
-header .user {
-    padding: 1.5rem;
-}
-
-header .user-data {
-    align-items: center;
-}
-
-header hr {
-    border: 0;
-    height: 1px;
-    background-color: var(--midGrey);
-    margin: 0.5rem 0;
-}
-
-header .user-avatar {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-image: url("../img/profile.svg");
-    background-size: contain;
-    background-position: center;
-    background-color: var(--midGrey);
-    border-radius: 50%;
-}
-
-header .user-name {
-    font-size: 0.75rem;
-    text-transform: capitalize;
-}
-
 header li {
-    padding: 0.5rem 1.4rem;
+    padding: 0.5rem var(--header-items-padding-H);
     position: relative;
 }
 
@@ -299,11 +255,55 @@ header button:hover {
 }
 
 header button.icn-add-playlist {
-    margin: 0.5rem 1.4rem;
+    margin: 0.5rem var(--header-items-padding-H);
 }
 
 header .btn-txt {
     margin-left: 0.4rem;
+}
+
+header span.playlist-head {
+    padding: var(--header-items-padding-H) var(--header-items-padding-H) 0 var(--header-items-padding-H);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+header .playlist-list {
+    overflow-y: auto;
+    min-height: 100px;
+    flex-grow: 1;
+}
+
+header .user {
+    padding: var(--header-items-padding-H);
+}
+
+header .user-data {
+    align-items: center;
+}
+
+header hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--midGrey);
+    margin: 0.5rem 0;
+}
+
+header .user-avatar {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url("../img/profile.svg");
+    background-size: contain;
+    background-position: center;
+    background-color: var(--midGrey);
+    border-radius: 50%;
+}
+
+header .user-name {
+    font-size: 0.75rem;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
@@ -588,8 +588,6 @@ footer .now-play button:hover::before {
 }
 
 
-/* PLAYER */
-
 /* comandi player */
 footer .player {
     width: 50%;
@@ -665,6 +663,7 @@ footer .time-count {
     font-size: 0.75rem;
     letter-spacing: 0.5px;
 }
+
 
 /* volume */
 footer .volume-bar {
