@@ -324,7 +324,6 @@ header .user-name {
     header .logo-small {
         display: block;
         height: 1.5rem;
-        margin: 1.5rem;
         margin: 1.5rem auto;
     }
 
@@ -353,11 +352,11 @@ header .user-name {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 0 1rem 0;
+        padding: 0;
     }
 
     header .user-data {
-        margin-top: 1rem;
+        margin: 1rem;
     }
 }
 
