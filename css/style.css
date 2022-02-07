@@ -55,7 +55,6 @@ INDICE CSS
 
     /* altezze */
     --barH: 5.5rem;
-    overflow-y: hidden;
 
     /* larghezze */
     --headerW: 230px;
@@ -209,6 +208,7 @@ header {
     height: calc(100vh - var(--barH));
     width: var(--headerW);
     flex-shrink: 0;
+    overflow-y: hidden;
 }
 
 header .logo-big {
@@ -327,10 +327,6 @@ header .btn-txt {
     header .user-data {
         margin-top: 1rem;
     }
-
-    main .banner-top {
-        width: calc(100vw - var(--headerW-mobile));
-    }
 }
 
 
@@ -351,12 +347,12 @@ main .banner-top {
     background-color: var(--blackAlpha);
     justify-content: flex-end;
     align-items: center;
-    height: 5.5rem;
-    width: calc(100vw - 230px);
+    height: var(--barH);
+    width: calc(100% - var(--headerW));
     padding-right: 1.4rem;
     position: fixed;
-    z-index: 10;
     top: 0;
+    z-index: 10;
 }
 
 main .banner-top button {
@@ -369,6 +365,13 @@ main .banner-top button {
 
 main .banner-top button:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+
+    main .banner-top {
+        width: calc(100% - var(--headerW-mobile));
+    }
 }
 
 
@@ -635,8 +638,8 @@ footer .time-count {
 }
 
 /* volume */
-footer .volume {
-    width: 14rem;
+footer .volume-bar {
+    width: 6rem;
 }
 
 footer .volume button:not(:last-of-type) {
