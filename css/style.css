@@ -18,9 +18,9 @@ INDICE CSS
     - menu musica
     - raccolte album
     - album card
-    
+
 6. FOOTER   
-    - tracci in esecuzione
+    - traccia in esecuzione
     - player
     - volume
 
@@ -299,10 +299,7 @@ header .btn-txt {
 
     header {
         width: 4.5rem;
-    }
-
-    header .logo-big{
-        display: none;
+        justify-content: space-between;
     }
 
     header .logo-small {
@@ -311,15 +308,11 @@ header .btn-txt {
         margin: 1.5rem;
     }
 
-    header .btn-txt {
-        display: none;
-    }
-
-    header .playlist {
-        display: none;
-    }
-    
-    header hr {
+    header .btn-txt, 
+    header .playlist, 
+    header .playlist-list, 
+    header hr, 
+    header .logo-big {
         display: none;
     }
 
