@@ -590,6 +590,7 @@ footer .now-play-action button {
 
 footer .now-play-action button::before {
     color: var(--midGrey);
+    transition: 0.2s;
 }
 
 footer .now-play button:hover::before {
@@ -615,6 +616,7 @@ footer .player-cmd button::before:not(.icn-play) {
 
 footer .icn-play::before {
     font-size: 2rem;
+    transition: 0.2s;
 }
 
 footer button.icn-play:hover {
