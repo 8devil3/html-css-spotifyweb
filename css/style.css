@@ -58,7 +58,7 @@ INDICE CSS
 
     /* larghezze */
     --headerW: 230px;
-    --headerW-mobile: 4.5rem;
+    --headerW-mobile: 4rem;
 }
 
 ul {
@@ -269,12 +269,19 @@ header .user-name {
 }
 
 header li {
-    padding: 0.5rem 1.4rem 0.5rem 1.2rem;
-    border-left: 0.25rem var(--black) solid;
+    padding: 0.5rem 1.4rem;
+    position: relative;
 }
 
-header li.active {
-    border-left: 0.25rem var(--green) solid;
+header li.active::before {
+    content: "";
+    height: 100%;
+    width: 0.25rem;
+    background-color: var(--green);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0 , -50%);
 }
 
 header button {
@@ -301,6 +308,10 @@ header .btn-txt {
 
 @media screen and (max-width: 600px) {
 
+    :root {
+        font-size: 14px;
+    }
+
     header {
         width: var(--headerW-mobile);
         justify-content: space-between;
@@ -310,6 +321,7 @@ header .btn-txt {
         display: block;
         height: 1.5rem;
         margin: 1.5rem;
+        margin: 1.5rem auto;
     }
 
     header .btn-txt, 
@@ -320,8 +332,24 @@ header .btn-txt {
         display: none;
     }
 
+    header ul.col {
+        align-items: center;
+    }
+
+    header li {
+        padding: 0.5rem 0;
+    }
+
+    header li.active::before {
+        content: "";
+        display: none;
+    }
+
     header .user {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 1rem 0;
     }
 
     header .user-data {
