@@ -56,6 +56,10 @@ INDICE CSS
     /* altezze */
     --barH: 5.5rem;
     overflow-y: hidden;
+
+    /* larghezze */
+    --headerW: 230px;
+    --headerW-mobile: 4.5rem;
 }
 
 ul {
@@ -203,7 +207,7 @@ header {
     background-color: var(--black);
     justify-content: flex-start;
     height: calc(100vh - var(--barH));
-    width: 230px;
+    width: var(--headerW);
     flex-shrink: 0;
 }
 
@@ -298,7 +302,7 @@ header .btn-txt {
 @media screen and (max-width: 600px) {
 
     header {
-        width: 4.5rem;
+        width: var(--headerW-mobile);
         justify-content: space-between;
     }
 
@@ -322,6 +326,10 @@ header .btn-txt {
 
     header .user-data {
         margin-top: 1rem;
+    }
+
+    main .banner-top {
+        width: calc(100vw - var(--headerW-mobile));
     }
 }
 
