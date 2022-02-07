@@ -201,6 +201,7 @@ header span.playlist-head {
 
 header .playlist-list {
     overflow-y: auto;
+    min-height: 100px;
 }
 
 header .user {
@@ -471,6 +472,7 @@ footer {
     justify-content: space-between;
     height: 5.5rem;
     width: 100%;
+    position: fixed;
     bottom: 0;
     padding: 0 1rem;
 }
