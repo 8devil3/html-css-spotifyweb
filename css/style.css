@@ -294,11 +294,13 @@ header hr {
 header .user-avatar {
     height: 1.5rem;
     width: 1.5rem;
-    background-image: url("../img/profile.svg");
-    background-size: contain;
-    background-position: center;
     background-color: var(--midGrey);
     border-radius: 50%;
+    overflow: hidden;
+}
+
+header .user-avatar img {
+    object-fit: contain;
 }
 
 header .user-name {
