@@ -551,6 +551,43 @@ main article.artist img {
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    main .music-menu {
+        margin-bottom: 3rem;
+    }
+
+    main section {
+        margin-right: 0.5rem;
+    }
+
+    main .double {
+        flex-wrap: wrap;
+    }
+    
+    main article {
+        text-align: left;
+    }
+
+    main article > div {
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    
+    main .img-box {
+        display: none;
+    }
+
+    main .music-title {
+        border-bottom: 1px var(--midGrey) solid;
+        padding-bottom: 0.5rem;
+    }
+
+    main .album-subtitle {
+        margin-top: 0.25rem;
+    }
+}
+
 
 
 
