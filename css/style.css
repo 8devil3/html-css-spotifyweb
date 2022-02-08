@@ -310,6 +310,27 @@ header .user-name {
     text-transform: capitalize;
 }
 
+header button.icn-install,
+header button.icn-install::before {
+    animation: install 1.2s ease-in-out infinite;
+}
+
+@keyframes install {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        color: var(--green);
+
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     :root {
@@ -323,8 +344,35 @@ header .user-name {
 
     header .logo-small {
         display: block;
-        height: 1.5rem;
-        margin: 1.5rem auto;
+        height: 1.8rem;
+        margin: 1.8rem auto;
+        animation: logo 1s cubic-bezier(0.79, 0.35, 0.13, 0.68) infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes logo {
+        0% {
+            transform: rotate(0turn);
+            border: 0;
+        }
+        
+        50% {
+            transform: rotate(0.5turn);
+            border: 4px var(--green) solid;
+            padding: 2px;
+        }
+
+        100%{
+            transform: rotate(1turn);
+            border: 0;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+    
+        main .banner-top {
+            width: calc(100% - var(--headerW-mobile));
+        }
     }
 
     header .btn-txt, 
@@ -397,13 +445,6 @@ main .banner-top button {
 
 main .banner-top button:hover {
     transform: scale(1.1);
-}
-
-@media screen and (max-width: 600px) {
-
-    main .banner-top {
-        width: calc(100% - var(--headerW-mobile));
-    }
 }
 
 
