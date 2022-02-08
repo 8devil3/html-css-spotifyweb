@@ -688,3 +688,30 @@ footer .volume-bar {
 footer .volume button:not(:last-of-type) {
     margin-right: 1rem;
 }
+
+
+@media screen and (max-width: 480px) {
+
+    header, main {
+        height: calc(100vh - var(--barH) * 1.5);
+    }
+
+    footer {
+        flex-wrap: wrap;
+        height: calc(var(--barH) * 1.5);
+    }
+
+    footer .now-play {
+        order: 2;
+    }
+
+    footer .player {
+        order: 1;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    footer .volume {
+        order: 3;
+    }
+}
