@@ -594,6 +594,10 @@ main article.artist img {
 
 @media screen and (max-width: 600px) {
 
+    main .banner-top {
+        width: calc(100% - var(--headerW-mobile));
+    }
+
     main .music-menu {
         margin-bottom: 3rem;
     }
